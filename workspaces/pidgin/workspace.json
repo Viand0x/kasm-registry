@@ -1,0 +1,34 @@
+{
+  "description": "Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously.",
+  "docker_registry": "https://ghcr.io/",
+  "image_src": "pidgin.png",
+  "name": "lscr.io/linuxserver/pidgin:latest",
+  "run_config": {
+    "security_opt": [
+      "seccomp=unconfined"
+    ],
+    "entrypoint": [
+      "/kasminit"
+    ],
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
+  },
+  "exec_config": {},
+  "categories": [
+    "Communication"
+  ],
+  "friendly_name": "Pidgin",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x",
+    "1.15.x",
+    "1.16.x"
+  ],
+  "uncompressed_size_mb": 1310
+}

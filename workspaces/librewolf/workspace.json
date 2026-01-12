@@ -1,0 +1,37 @@
+{
+  "description": "LibreWolf is a custom and independent version of Firefox, with the primary goals of privacy, security and user freedom.",
+  "docker_registry": "https://ghcr.io/",
+  "image_src": "librewolf.png",
+  "name": "lscr.io/linuxserver/librewolf:latest",
+  "run_config": {
+    "entrypoint": [
+      "/kasminit"
+    ],
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c 'HOME=/home/kasm-user librewolf \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c 'HOME=/home/kasm-user librewolf \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Browser"
+  ],
+  "friendly_name": "LibreWolf",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x",
+    "1.15.x",
+    "1.16.x"
+  ],
+  "uncompressed_size_mb": 2690
+}

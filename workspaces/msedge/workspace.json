@@ -1,0 +1,37 @@
+{
+  "description": "Microsoft Edge is a cross-platform web browser developed by Microsoft and based on Chromium.",
+  "docker_registry": "https://ghcr.io/",
+  "image_src": "msedge.png",
+  "name": "lscr.io/linuxserver/msedge:latest",
+  "run_config": {
+    "entrypoint": [
+      "/kasminit"
+    ],
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c 'HOME=/home/kasm-user microsoft-edge \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c 'HOME=/home/kasm-user microsoft-edge \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Browser"
+  ],
+  "friendly_name": "Microsoft Edge",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x",
+    "1.15.x",
+    "1.16.x"
+  ],
+  "uncompressed_size_mb": 2950
+}

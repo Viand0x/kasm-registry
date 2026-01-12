@@ -1,0 +1,33 @@
+{
+  "description": "Spotube is an open source, cross-platform Spotify client compatible across multiple platforms utilizing Spotify's data API and YouTube,.",
+  "docker_registry": "https://ghcr.io/",
+  "image_src": "spotube.png",
+  "name": "lscr.io/linuxserver/spotube:latest",
+  "run_config": {
+    "security_opt": [
+      "seccomp=unconfined"
+    ],
+    "entrypoint": [
+      "/kasminit"
+    ],
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
+  },
+  "exec_config": {},
+  "categories": [
+    "Multimedia"
+  ],
+  "friendly_name": "Spotube",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x",
+    "1.15.x",
+    "1.16.x"
+  ],
+  "uncompressed_size_mb": 2420
+}
