@@ -7,7 +7,7 @@ const nextConfig = {
     name: 'Kasm Technologies',
     description: 'The official store for Kasm supported workspaces.',
     icon: '/img/logo.svg',
-    listUrl: 'https://viand0x.github.io/',
+    listUrl: 'https://viand0x.github.io/kasm-registry/',
     contactUrl: 'https://kasmweb.com/support',
   },
   reactStrictMode: true,
