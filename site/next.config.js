@@ -4,8 +4,8 @@ const nextConfig = {
   output: 'export',
   distDir: '../public',
   env: {
-    name: 'Kasm Technologies',
-    description: 'The official store for Kasm supported workspaces.',
+    name: 'Registre Maitre',
+    description: 'Un registre dont on maitrise plus de choses.',
     icon: '/img/logo.svg',
     listUrl: 'https://viand0x.github.io/kasm-registry/',
     contactUrl: 'https://kasmweb.com/support',
