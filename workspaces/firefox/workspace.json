@@ -1,0 +1,41 @@
+{
+  "description": "Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation.",
+  "docker_registry": "https://ghcr.io/",
+  "image_src": "firefox.png",
+  "name": "lscr.io/linuxserver/firefox:latest",
+  "run_config": {
+    "security_opt": [
+      "seccomp=unconfined"
+    ],
+    "entrypoint": [
+      "/kasminit"
+    ],
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c 'HOME=/home/kasm-user firefox \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c 'HOME=/home/kasm-user firefox \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Browser"
+  ],
+  "friendly_name": "Firefox",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "compatibility": [
+    "1.13.x",
+    "1.14.x",
+    "1.15.x",
+    "1.16.x"
+  ],
+  "uncompressed_size_mb": 1230
+}
